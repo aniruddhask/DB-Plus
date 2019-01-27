@@ -236,7 +236,7 @@ namespace CompleteDataBaseAccess
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Location = new System.Drawing.Point(0, 416);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 25;
@@ -260,7 +260,7 @@ namespace CompleteDataBaseAccess
             this.BackgroundImage = global::CompleteDataBaseAccess.Properties.Resources.Login_Final;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(870, 538);
+            this.ClientSize = new System.Drawing.Size(326, 206);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -450,7 +450,7 @@ namespace CompleteDataBaseAccess
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (Opacity != 1)
-                Opacity += .01;
+                Opacity += .1;
             else
                 timer1.Stop();
         }

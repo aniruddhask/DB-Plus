@@ -22,9 +22,9 @@ Date				Name					Comment
     <DatabaseDelete>del</DatabaseDelete>
     <DatabaseSelect>get</DatabaseSelect>
     <DatabaseChecking>ifExisting</DatabaseChecking>
-    <Normal>IrisPortal.QPM</Normal>
-    <Client>Appraisal.BAL</Client>
-    <Server>Appraisal.DAL</Server>
+    <Normal>Project</Normal>
+    <Client>Project.BAL</Client>
+    <Server>Project.DAL</Server>
     <IsSameServer>False</IsSameServer>
     <IsSameClient>False</IsSameClient>
     <ClassPrefix>clsBO</ClassPrefix>

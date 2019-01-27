@@ -2154,4 +2154,15 @@
    at CompleteDataBaseAccess.DbPlusInOne.fillPannelAccordingToTheTableSelection() in C:\Aniruddha\Projects\DB Plus\DbPlusInOne.cs:line 1302</ErrorMessage>
     <DateTime>0</DateTime>
   </Error>
+  <Error>
+    <ErrorMessage>System.Data.OleDb.OleDbException: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at CompleteDataBaseAccess.Connection.btnConnect_Click(Object sender, EventArgs e) in C:\Aniruddha\Projects\DB Plus\Connection.cs:line 354</ErrorMessage>
+    <DateTime>27-01-2019 12:02:56</DateTime>
+  </Error>
 </NewDataSet>
