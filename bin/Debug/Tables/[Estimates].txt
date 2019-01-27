@@ -1,0 +1,173 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[EstimateArea](
+	[AreaId] [bigint] IDENTITY(1,1) NOT NULL,
+	[EstimateId] [bigint] NULL,
+	[AreaDimension] [varchar](200) COLLATE Latin1_General_CI_AI NULL,
+	[AreaType] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[Area] [decimal](18, 2) NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[EstimateEquipments](
+	[EquipmentDetailId] [bigint] IDENTITY(1,1) NOT NULL,
+	[EstimateId] [bigint] NULL,
+	[EquipmentId] [int] NOT NULL,
+	[EquipmentCount] [int] NULL,
+	[RentalType] [varchar](2) COLLATE Latin1_General_CI_AI NULL,
+	[EquipmentUnits] [decimal](18, 2) NULL,
+	[EquipmentRate] [decimal](18, 2) NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[EstimateMaterialColumnVisibility](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ColumnName] [varchar](100) COLLATE Latin1_General_CI_AI NULL,
+	[Visible] [bit] NULL,
+	[EstimateTypeId] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[EstimateMaterialCourses](
+	[CourseDetailId] [bigint] IDENTITY(1,1) NOT NULL,
+	[CourseName] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[EstimateId] [bigint] NULL,
+	[MaterialId] [int] NOT NULL,
+	[Depth] [decimal](18, 2) NULL,
+	[RateOfApplication] [decimal](18, 2) NULL,
+	[Quantity] [decimal](18, 2) NULL,
+	[UnitPrice] [decimal](18, 2) NULL,
+	[UnitOfMeasure] [int] NULL,
+	[Factor] [decimal](18, 2) NULL,
+	[DeliveryPrice] [decimal](18, 2) NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Estimates](
+	[EstimateId] [bigint] IDENTITY(1,1) NOT NULL,
+	[EstimateTypeId] [int] NOT NULL,
+	[CustomerName] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[EstimateCreatedDate] [datetime] NULL,
+	[ProjectName] [varchar](100) COLLATE Latin1_General_CI_AI NULL,
+	[JobDescription] [varchar](100) COLLATE Latin1_General_CI_AI NULL,
+	[SalesRep] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[PlantId] [varchar](10) COLLATE Latin1_General_CI_AI NULL,
+	[TotalAmount] [decimal](18, 2) NULL,
+	[TotalYardage] [decimal](18, 2) NULL,
+	[UserId] [varchar](10) COLLATE Latin1_General_CI_AI NULL,
+	[Comments] [varchar](1000) COLLATE Latin1_General_CI_AI NULL,
+	[OGSINDEX] [decimal](18, 2) NULL,
+	[CustomerID] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[IsTemplate] [bit] NULL,
+	[ShowVolumetric] [bit] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[EstimateTypeMaster](
+	[EstimateTypeId] [int] IDENTITY(1,1) NOT NULL,
+	[EstimateType] [varchar](100) COLLATE Latin1_General_CI_AI NULL,
+	[IsActive] [bit] NULL,
+	[DefaultRateOfApplication] [decimal](18, 2) NULL,
+	[ArchiveDate] [datetime] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ItemMaster](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ItemName] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[ItemTypeId] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[ItemDefaultPrice] [decimal](18, 2) NULL,
+	[ItemGroup] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[IsActive] [bit] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[temp_Plant](
+	[PltID] [varchar](2) COLLATE Latin1_General_CI_AI NOT NULL,
+	[PltName] [varchar](32) COLLATE Latin1_General_CI_AI NOT NULL,
+	[ProdClass] [varchar](10) COLLATE Latin1_General_CI_AI NOT NULL,
+	[Region] [varchar](30) COLLATE Latin1_General_CI_AI NULL,
+	[FOBorDlv] [int] NULL,
+	[CompID] [varchar](2) COLLATE Latin1_General_CI_AI NOT NULL,
+	[status] [bit] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[UnitOfMeasureMaster](
+	[UnitOfMeasureId] [int] IDENTITY(1,1) NOT NULL,
+	[UnitOfMeasureDisplay] [varchar](50) COLLATE Latin1_General_CI_AI NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[UserEmailSettings](
+	[UserId] [varchar](10) COLLATE Latin1_General_CI_AI NOT NULL,
+	[EmailId] [varchar](255) COLLATE Latin1_General_CI_AI NULL,
+	[Password] [varchar](255) COLLATE Latin1_General_CI_AI NULL,
+	[EmailSignature] [varchar](500) COLLATE Latin1_General_CI_AI NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Users](
+	[UserId] [char](10) COLLATE Latin1_General_CI_AI NOT NULL,
+	[Password] [char](100) COLLATE Latin1_General_CI_AI NOT NULL,
+	[UserName] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[UserEmail] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[IsAdmin] [tinyint] NOT NULL,
+	[UserPhone] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[IsSalesMan] [bit] NULL,
+	[UserImage] [image] NULL,
+	[UserFax] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[UserMobile] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[PrintSetID] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[PreCastUser] [bit] NULL,
+	[ARUser] [bit] NULL,
+	[PARCOUser] [bit] NULL,
+	[Region] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[TargetCompany] [varchar](50) COLLATE Latin1_General_CI_AI NULL,
+	[EmailSignature] [varchar](255) COLLATE Latin1_General_CI_AI NULL,
+	[Active] [bit] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************

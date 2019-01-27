@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<Types>
+  <DataTypes>
+    <OracleDataType>number</OracleDataType>
+    <VSDataType>int</VSDataType>
+  </DataTypes>
+  <DataTypes>
+    <OracleDataType>varchar2</OracleDataType>
+    <VSDataType>string</VSDataType>
+  </DataTypes>
+	<DataTypes>
+		<OracleDataType>float</OracleDataType>
+		<VSDataType>decimal</VSDataType>
+	</DataTypes>
+	<DataTypes>
+		<OracleDataType>nvarchar2</OracleDataType>
+		<VSDataType>string</VSDataType>
+	</DataTypes>
+	<DataTypes>
+		<OracleDataType>nvarchar</OracleDataType>
+		<VSDataType>string</VSDataType>
+	</DataTypes>
+	<DataTypes>
+		<OracleDataType>date</OracleDataType>
+		<VSDataType>DateTime</VSDataType>
+	</DataTypes>
+</Types>

@@ -1,0 +1,447 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ActiveSubscriptions](
+	[ActiveID] [uniqueidentifier] NOT NULL,
+	[SubscriptionID] [uniqueidentifier] NOT NULL,
+	[TotalNotifications] [int] NULL,
+	[TotalSuccesses] [int] NOT NULL,
+	[TotalFailures] [int] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Batch](
+	[BatchID] [uniqueidentifier] NOT NULL,
+	[AddedOn] [datetime] NOT NULL,
+	[Action] [varchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Item] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Parent] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Param] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[BoolParam] [bit] NULL,
+	[Content] [image] NULL,
+	[Properties] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[CachePolicy](
+	[CachePolicyID] [uniqueidentifier] NOT NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[ExpirationFlags] [int] NOT NULL,
+	[CacheExpiration] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Catalog](
+	[ItemID] [uniqueidentifier] NOT NULL,
+	[Path] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Name] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[ParentID] [uniqueidentifier] NULL,
+	[Type] [int] NOT NULL,
+	[Content] [image] NULL,
+	[Intermediate] [uniqueidentifier] NULL,
+	[SnapshotDataID] [uniqueidentifier] NULL,
+	[LinkSourceID] [uniqueidentifier] NULL,
+	[Property] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Description] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Hidden] [bit] NULL,
+	[CreatedByID] [uniqueidentifier] NOT NULL,
+	[CreationDate] [datetime] NOT NULL,
+	[ModifiedByID] [uniqueidentifier] NOT NULL,
+	[ModifiedDate] [datetime] NOT NULL,
+	[MimeType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[SnapshotLimit] [int] NULL,
+	[Parameter] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[PolicyID] [uniqueidentifier] NOT NULL,
+	[PolicyRoot] [bit] NOT NULL,
+	[ExecutionFlag] [int] NOT NULL,
+	[ExecutionTime] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ChunkData](
+	[ChunkID] [uniqueidentifier] NOT NULL,
+	[SnapshotDataID] [uniqueidentifier] NOT NULL,
+	[ChunkFlags] [tinyint] NULL,
+	[ChunkName] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ChunkType] [int] NULL,
+	[Version] [smallint] NULL,
+	[MimeType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Content] [image] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ConfigurationInfo](
+	[ConfigInfoID] [uniqueidentifier] NOT NULL,
+	[Name] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Value] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[DataSource](
+	[DSID] [uniqueidentifier] NOT NULL,
+	[ItemID] [uniqueidentifier] NULL,
+	[SubscriptionID] [uniqueidentifier] NULL,
+	[Name] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Extension] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Link] [uniqueidentifier] NULL,
+	[CredentialRetrieval] [int] NULL,
+	[Prompt] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ConnectionString] [image] NULL,
+	[OriginalConnectionString] [image] NULL,
+	[OriginalConnectStringExpressionBased] [bit] NULL,
+	[UserName] [image] NULL,
+	[Password] [image] NULL,
+	[Flags] [int] NULL,
+	[Version] [int] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Event](
+	[EventID] [uniqueidentifier] NOT NULL,
+	[EventType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[EventData] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[TimeEntered] [datetime] NOT NULL,
+	[ProcessStart] [datetime] NULL,
+	[ProcessHeartbeat] [datetime] NULL,
+	[BatchID] [uniqueidentifier] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ExecutionLog](
+	[InstanceName] [nvarchar](38) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[ReportID] [uniqueidentifier] NULL,
+	[UserName] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[RequestType] [bit] NOT NULL,
+	[Format] [nvarchar](26) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Parameters] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[TimeStart] [datetime] NOT NULL,
+	[TimeEnd] [datetime] NOT NULL,
+	[TimeDataRetrieval] [int] NOT NULL,
+	[TimeProcessing] [int] NOT NULL,
+	[TimeRendering] [int] NOT NULL,
+	[Source] [tinyint] NOT NULL,
+	[Status] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[ByteCount] [bigint] NOT NULL,
+	[RowCount] [bigint] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[History](
+	[HistoryID] [uniqueidentifier] NOT NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[SnapshotDataID] [uniqueidentifier] NOT NULL,
+	[SnapshotDate] [datetime] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Keys](
+	[MachineName] [nvarchar](256) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[InstallationID] [uniqueidentifier] NOT NULL,
+	[InstanceName] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Client] [int] NOT NULL,
+	[PublicKey] [image] NULL,
+	[SymmetricKey] [image] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ModelDrill](
+	[ModelDrillID] [uniqueidentifier] NOT NULL,
+	[ModelID] [uniqueidentifier] NOT NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[ModelItemID] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Type] [tinyint] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ModelItemPolicy](
+	[ID] [uniqueidentifier] NOT NULL,
+	[CatalogItemID] [uniqueidentifier] NOT NULL,
+	[ModelItemID] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[PolicyID] [uniqueidentifier] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ModelPerspective](
+	[ID] [uniqueidentifier] NOT NULL,
+	[ModelID] [uniqueidentifier] NOT NULL,
+	[PerspectiveID] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[PerspectiveName] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[PerspectiveDescription] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Notifications](
+	[NotificationID] [uniqueidentifier] NOT NULL,
+	[SubscriptionID] [uniqueidentifier] NOT NULL,
+	[ActivationID] [uniqueidentifier] NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[SnapShotDate] [datetime] NULL,
+	[ExtensionSettings] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Locale] [nvarchar](128) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Parameters] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ProcessStart] [datetime] NULL,
+	[NotificationEntered] [datetime] NOT NULL,
+	[ProcessAfter] [datetime] NULL,
+	[Attempt] [int] NULL,
+	[SubscriptionLastRunTime] [datetime] NOT NULL,
+	[DeliveryExtension] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[SubscriptionOwnerID] [uniqueidentifier] NOT NULL,
+	[IsDataDriven] [bit] NOT NULL,
+	[BatchID] [uniqueidentifier] NULL,
+	[ProcessHeartbeat] [datetime] NULL,
+	[Version] [int] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Policies](
+	[PolicyID] [uniqueidentifier] NOT NULL,
+	[PolicyFlag] [tinyint] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[PolicyUserRole](
+	[ID] [uniqueidentifier] NOT NULL,
+	[RoleID] [uniqueidentifier] NOT NULL,
+	[UserID] [uniqueidentifier] NOT NULL,
+	[PolicyID] [uniqueidentifier] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ReportSchedule](
+	[ScheduleID] [uniqueidentifier] NOT NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[SubscriptionID] [uniqueidentifier] NULL,
+	[ReportAction] [int] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Roles](
+	[RoleID] [uniqueidentifier] NOT NULL,
+	[RoleName] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Description] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[TaskMask] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[RoleFlags] [tinyint] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[RunningJobs](
+	[JobID] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[StartDate] [datetime] NOT NULL,
+	[ComputerName] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[RequestName] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[RequestPath] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[UserId] [uniqueidentifier] NOT NULL,
+	[Description] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Timeout] [int] NOT NULL,
+	[JobAction] [smallint] NOT NULL,
+	[JobType] [smallint] NOT NULL,
+	[JobStatus] [smallint] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Schedule](
+	[ScheduleID] [uniqueidentifier] NOT NULL,
+	[Name] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[StartDate] [datetime] NOT NULL,
+	[Flags] [int] NOT NULL,
+	[NextRunTime] [datetime] NULL,
+	[LastRunTime] [datetime] NULL,
+	[EndDate] [datetime] NULL,
+	[RecurrenceType] [int] NULL,
+	[MinutesInterval] [int] NULL,
+	[DaysInterval] [int] NULL,
+	[WeeksInterval] [int] NULL,
+	[DaysOfWeek] [int] NULL,
+	[DaysOfMonth] [int] NULL,
+	[Month] [int] NULL,
+	[MonthlyWeek] [int] NULL,
+	[State] [int] NULL,
+	[LastRunStatus] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ScheduledRunTimeout] [int] NULL,
+	[CreatedById] [uniqueidentifier] NOT NULL,
+	[EventType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[EventData] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Type] [int] NOT NULL,
+	[ConsistancyCheck] [datetime] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[SecData](
+	[SecDataID] [uniqueidentifier] NOT NULL,
+	[PolicyID] [uniqueidentifier] NOT NULL,
+	[AuthType] [int] NOT NULL,
+	[XmlDescription] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[NtSecDescPrimary] [image] NOT NULL,
+	[NtSecDescSecondary] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ServerParametersInstance](
+	[ServerParametersID] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[ParentID] [nvarchar](32) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Path] [nvarchar](425) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[CreateDate] [datetime] NOT NULL,
+	[ModifiedDate] [datetime] NOT NULL,
+	[Timeout] [int] NOT NULL,
+	[Expiration] [datetime] NOT NULL,
+	[ParametersValues] [image] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[SnapshotData](
+	[SnapshotDataID] [uniqueidentifier] NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[ParamsHash] [int] NULL,
+	[QueryParams] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[EffectiveParams] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Description] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[DependsOnUser] [bit] NULL,
+	[PermanentRefcount] [int] NOT NULL,
+	[TransientRefcount] [int] NOT NULL,
+	[ExpirationDate] [datetime] NOT NULL,
+	[PageCount] [int] NULL,
+	[HasDocMap] [bit] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Subscriptions](
+	[SubscriptionID] [uniqueidentifier] NOT NULL,
+	[OwnerID] [uniqueidentifier] NOT NULL,
+	[Report_OID] [uniqueidentifier] NOT NULL,
+	[Locale] [nvarchar](128) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[InactiveFlags] [int] NOT NULL,
+	[ExtensionSettings] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ModifiedByID] [uniqueidentifier] NOT NULL,
+	[ModifiedDate] [datetime] NOT NULL,
+	[Description] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[LastStatus] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[EventType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[MatchData] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[LastRunTime] [datetime] NULL,
+	[Parameters] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[DataSettings] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[DeliveryExtension] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Version] [int] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[UpgradeInfo](
+	[Item] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Status] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[Users](
+	[UserID] [uniqueidentifier] NOT NULL,
+	[Sid] [varbinary](85) NULL,
+	[UserType] [int] NOT NULL,
+	[AuthType] [int] NOT NULL,
+	[UserName] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************

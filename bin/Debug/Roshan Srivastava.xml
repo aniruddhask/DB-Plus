@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LOAN_APPLICATION xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MISMOVersionID="2.3.1">
+  <_DATA_INFORMATION>
+    <DATA_VERSION _Name="CalyxPlatformVersion" _Number="4.0" />
+    <DATA_VERSION _Name="CalyxApplicationName" _Number="Point" />
+    <DATA_VERSION _Name="CalyxApplicationVersion" _Number="5.4" />
+    <DATA_VERSION _Name="CalyxApplicationBuild" _Number="855" />
+    <DATA_VERSION _Name="CalyxApplicationUpdateVersions" _Number="I-Update 50" />
+    <DATA_VERSION _Name="CalyxMA" _Number="1.0" />
+    <DATA_VERSION _Name="CalyxLIP" _Number="4.0" />
+    <DATA_VERSION _Name="CalyxPoint" _Number="5.4" />
+    <DATA_VERSION _Name="CalyxPointBuild" _Number="855" />
+  </_DATA_INFORMATION>
+  <ADDITIONAL_CASE_DATA>
+    <TRANSMITTAL_DATA BelowMarketSubordinateFinancingIndicator="Y" BuydownRatePercent="0" CaseStateType="PostClosingQualityControl" CurrentFirstMortgageHolderType="Unknown" LenderRegistrationIdentifier="AS132123" PropertyAppraisedValueAmount="200000" LoanOriginationSystemLoanIdentifier="A00479B9-1FD4-4E0C-84A4-9291E576B93B" />
+  </ADDITIONAL_CASE_DATA>
+  <AFFORDABLE_LENDING FNMCommunitySecondsIndicator="N" FNMNeighborsMortgageEligibilityIndicator="N" FREAffordableProgramIdentifier="3" MSAIdentifier="85" />
+  <ASSET BorrowerID="B_0_0" _AccountIdentifier="39845" _CashOrMarketValueAmount="5000" _Type="CheckingAccount" _HolderName="Crestar Bank" _HolderStreetAddress="342 Harvey Street" _HolderCity="Baltimore" _HolderState="MD" _HolderPostalCode="37485" />
+  <ASSET BorrowerID="B_0_0" _AccountIdentifier="743682" _CashOrMarketValueAmount="30000" _Type="SavingsAccount" _HolderName="Crestar Bank" _HolderStreetAddress="7593 Harold Square" _HolderCity="Washington" _HolderState="DC" _HolderPostalCode="85930" />
+  <ASSET BorrowerID="B_0_0" _CashOrMarketValueAmount="3232" _Type="Stock" _HolderName="Fidelity" />
+  <ASSET BorrowerID="B_1_0" _AccountIdentifier="0001" _CashOrMarketValueAmount="1222" _Type="CheckingAccount" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662123" />
+  <ASSET BorrowerID="B_1_0" _CashOrMarketValueAmount="5000" _Type="GiftsTotal" />
+  <ASSET BorrowerID="B_1_0" _AccountIdentifier="0002" _CashOrMarketValueAmount="45000" _Type="CertificateOfDepositTimeDeposit" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662122" />
+  <ASSET BorrowerID="B_1_0" _AccountIdentifier="0003" _CashOrMarketValueAmount="1200" _Type="MoneyMarketFund" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662123" />
+  <ASSET BorrowerID="B_1_0" _CashOrMarketValueAmount="30000" _Type="NetWorthOfBusinessOwned" />
+  <ASSET BorrowerID="B_2_0" _AccountIdentifier="0009846" _CashOrMarketValueAmount="144000" _Type="MoneyMarketFund" _HolderName="Busey Bank" _HolderStreetAddress="6543 Howard Avenue" _HolderCity="Champaign" _HolderState="IL" _HolderPostalCode="67345" />
+  <ASSET BorrowerID="B_2_0" _AccountIdentifier="6658597" _CashOrMarketValueAmount="6000" _Type="CheckingAccount" _HolderName="Crestar Bank" _HolderStreetAddress="45 Oak Street" _HolderCity="Fairfax" _HolderState="VA" _HolderPostalCode="22033" />
+  <ASSET BorrowerID="B_3_0" _AccountIdentifier="7321588" _CashOrMarketValueAmount="10000" _Type="TrustAccount" _HolderName="All Trust Funds" _HolderStreetAddress="217 Skillman Dr" _HolderCity="Toano" _HolderState="VA" _HolderPostalCode="231688933" />
+  <ASSET BorrowerID="B_3_0" _AccountIdentifier="AS05661223" _CashOrMarketValueAmount="8900" _Type="SavingsAccount" _HolderName="G&amp; H Bank" _HolderStreetAddress="24 Whittier Rd" _HolderCity="Wakefield" _HolderState="MA" _HolderPostalCode="018804932" />
+  <ASSET BorrowerID="B_3_0" _AccountIdentifier="AS1526" _CashOrMarketValueAmount="2366" _Type="CheckingAccount" _HolderName="Capitol Bank" _HolderStreetAddress="710 N High Point Rd" _HolderCity="Madison" _HolderState="WI" _HolderPostalCode="537172275" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="1500" _Type="Stock" _HolderName="MSFT" StockBondMutualFundShareCount="50" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="625" _Type="Stock" _HolderName="DELL" StockBondMutualFundShareCount="25" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="525" _Type="Stock" _HolderName="SUNW" StockBondMutualFundShareCount="100" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="100000" _Type="LifeInsurance" LifeInsuranceFaceValueAmount="10000" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="23000" _Type="RetirementFund" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="7000" _Type="Automobile" AutomobileMakeDescription="Ford Taurus" AutomobileModelYear="1995" />
+  <ASSET BorrowerID="B_3_0" _CashOrMarketValueAmount="10000" _Type="Automobile" AutomobileMakeDescription="Honda Civic" AutomobileModelYear="2001" />
+  <ASSET BorrowerID="B_4_0" _AccountIdentifier="0009846" _CashOrMarketValueAmount="144000" _Type="MoneyMarketFund" _HolderName="Busey Bank" _HolderStreetAddress="6543 Howard Avenue" _HolderCity="Champaign" _HolderState="IL" _HolderPostalCode="67345" />
+  <ASSET BorrowerID="B_5_0" _AccountIdentifier="0001" _CashOrMarketValueAmount="2345" _Type="CheckingAccount" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662123" />
+  <ASSET BorrowerID="B_5_0" _AccountIdentifier="AS431235" _CashOrMarketValueAmount="6700" _Type="MoneyMarketFund" _HolderName="Greater Wachovia Bank" _HolderStreetAddress="214 Whittier Rd, Suite 22" _HolderCity="Wakefield" _HolderState="MA" _HolderPostalCode="018804932" />
+  <ASSET BorrowerID="B_5_0" _AccountIdentifier="0002" _CashOrMarketValueAmount="41000" _Type="CertificateOfDepositTimeDeposit" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662122" />
+  <ASSET BorrowerID="B_5_0" _AccountIdentifier="0003" _CashOrMarketValueAmount="4200" _Type="MutualFund" _HolderName="First Iowa Bank" _HolderStreetAddress="150 Maple Ave" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500662123" />
+  <ASSET BorrowerID="B_5_0" _AccountIdentifier="AZ1323" _CashOrMarketValueAmount="14000" _Type="SavingsAccount" _HolderName="Bank Of America" _HolderStreetAddress="3040 Charlevoix Dr SE Ste 171" _HolderCity="Grand Rapids" _HolderState="MI" _HolderPostalCode="49546" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="900" _Type="Stock" _HolderName="CC" StockBondMutualFundShareCount="30" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="2000" _Type="Stock" _HolderName="INTC" StockBondMutualFundShareCount="100" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="300000" _Type="LifeInsurance" LifeInsuranceFaceValueAmount="50000" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="125000" _Type="RetirementFund" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="30000" _Type="NetWorthOfBusinessOwned" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="16000" _Type="Automobile" AutomobileMakeDescription="Nissan Altima" AutomobileModelYear="2003" />
+  <ASSET BorrowerID="B_5_0" _CashOrMarketValueAmount="30000" _Type="Automobile" AutomobileMakeDescription="Lexus I30" AutomobileModelYear="2005" />
+  <DOWN_PAYMENT _Amount="10000" _SourceDescription="175 Thirteenth Street" _Type="EquityOnPendingSale" />
+  <GOVERNMENT_LOAN>
+    <FHA_LOAN FHA_MIPremiumRefundAmount="300" />
+    <FHA_VA_LOAN />
+    <VA_LOAN VABorrowerCoBorrowerMarriedIndicator="Y" />
+  </GOVERNMENT_LOAN>
+  <GOVERNMENT_REPORTING HMDAPurposeOfLoanType="HomePurchase" HMDAPreapprovalType="PreapprovalWasNotRequested" HMDA_HOEPALoanStatusIndicator="N" HMDARateSpreadPercent="99.99" />
+  <INTERVIEWER_INFORMATION ApplicationTakenMethodType="Internet" InterviewerApplicationSignedDate="20061004" InterviewersName="Larry Loantaker" />
+  <LIABILITY _ID="L_B_0_0_000" BorrowerID="B_0_0" REO_ID="R_B_0_0_000" _HolderStreetAddress="PO Box 356" _HolderCity="Tampa" _HolderState="FL" _HolderPostalCode="63782" _ExclusionIndicator="N" _HolderName="Best Buy" _MonthlyPaymentAmount="1200.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="121" _Type="MortgageLoan" _UnpaidBalanceAmount="145000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_0_0_001" BorrowerID="B_0_0" _AccountIdentifier="58652333" _ExclusionIndicator="N" _HolderName="CHASE" _MonthlyPaymentAmount="257.44" _PayoffStatusIndicator="N" _RemainingTermMonths="20" _Type="Installment" _UnpaidBalanceAmount="5000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_0_0_002" BorrowerID="B_0_0" _AccountIdentifier="950254520" _ExclusionIndicator="N" _HolderName="SALLIE MAE" _MonthlyPaymentAmount="49.24" _PayoffStatusIndicator="N" _RemainingTermMonths="51" _Type="Installment" _UnpaidBalanceAmount="2500.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_0_0_003" BorrowerID="B_0_0" _AccountIdentifier="950752340" _ExclusionIndicator="N" _HolderName="SALLIE MAE" _MonthlyPaymentAmount="24.63" _PayoffStatusIndicator="N" _RemainingTermMonths="45" _Type="Installment" _UnpaidBalanceAmount="1100.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_0_0_004" BorrowerID="B_0_0" _AccountIdentifier="3210989098" _ExclusionIndicator="N" _HolderName="TOYOTA CREDIT" _MonthlyPaymentAmount="500.03" _PayoffStatusIndicator="N" _RemainingTermMonths="32" _Type="Installment" _UnpaidBalanceAmount="15838.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_0_0_005" BorrowerID="B_0_0" _AccountIdentifier="6011785239" _ExclusionIndicator="N" _HolderName="UNIVERSAL VISA" _MonthlyPaymentAmount="25.00" _PayoffStatusIndicator="N" _RemainingTermMonths="38" _Type="Revolving" _UnpaidBalanceAmount="950.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_000" BorrowerID="B_1_0" _HolderStreetAddress="1 Main Street" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500661232" _AccountIdentifier="88346175-1995" _ExclusionIndicator="N" _HolderName="DEPT STORE D" _MonthlyPaymentAmount="20.00" _PayoffStatusIndicator="N" _RemainingTermMonths="12" _Type="Revolving" _UnpaidBalanceAmount="226.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_001" BorrowerID="B_1_0" _HolderStreetAddress="2 Main Street" _HolderCity="Bethesda" _HolderState="MD" _HolderPostalCode="208142323" _AccountIdentifier="2" _ExclusionIndicator="N" _HolderName="Riggs National Bank" _MonthlyPaymentAmount="20.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="2" _Type="Open30DayChargeAccount" _UnpaidBalanceAmount="40.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_002" BorrowerID="B_1_0" _HolderStreetAddress="3 Main Street" _HolderCity="Hermosa Beach" _HolderState="CA" _HolderPostalCode="902412332" _AccountIdentifier="2127524795" _ExclusionIndicator="N" _HolderName="BANK LOAN A" _MonthlyPaymentAmount="242.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="37" _Type="Installment" _UnpaidBalanceAmount="8761.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_003" BorrowerID="B_1_0" _HolderStreetAddress="4 Main Street" _HolderCity="Chicago" _HolderState="IL" _HolderPostalCode="545772378" _AccountIdentifier="5551212202" _ExclusionIndicator="N" _HolderName="DEPT STORE E" _MonthlyPaymentAmount="10.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="26" _Type="Revolving" _UnpaidBalanceAmount="253.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_004" BorrowerID="B_1_0" REO_ID="R_B_1_0_000" _HolderStreetAddress="5 Main Street" _HolderCity="Boston" _HolderState="MA" _HolderPostalCode="209543233" _AccountIdentifier="5" _ExclusionIndicator="N" _HolderName="Bank of Boston" _MonthlyPaymentAmount="1074.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="94" _Type="MortgageLoan" _UnpaidBalanceAmount="100000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_005" BorrowerID="B_1_0" REO_ID="R_B_1_0_002" _HolderStreetAddress="6 Main Street" _HolderCity="Boston" _HolderState="MA" _HolderPostalCode="20954" _AccountIdentifier="47853478576" _ExclusionIndicator="N" _HolderName="MTG LOAN A" _MonthlyPaymentAmount="1117.00" _PayoffStatusIndicator="N" _RemainingTermMonths="94" _Type="MortgageLoan" _UnpaidBalanceAmount="104050.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_006" BorrowerID="B_1_0" REO_ID="R_B_1_0_003" _HolderStreetAddress="7 Main Street" _HolderCity="Boston" _HolderState="MA" _HolderPostalCode="20954" _AccountIdentifier="31684-1571" _ExclusionIndicator="N" _HolderName="MTG LOAN C" _MonthlyPaymentAmount="278.00" _PayoffStatusIndicator="N" _RemainingTermMonths="81" _Type="MortgageLoan" _UnpaidBalanceAmount="22244.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_1_0_007" BorrowerID="B_1_0" AlimonyOwedToName="explanation Child support explanation" _MonthlyPaymentAmount="190" _Type="Alimony" />
+  <LIABILITY _ID="L_B_2_0_000" BorrowerID="B_2_0" REO_ID="R_B_2_0_000" _HolderStreetAddress="218923 Oak Street" _HolderCity="Chicago" _HolderState="IL" _HolderPostalCode="58976" _AccountIdentifier="234765" _ExclusionIndicator="N" _HolderName="Suntrust" _MonthlyPaymentAmount="300.00" _PayoffStatusIndicator="N" _RemainingTermMonths="40" _Type="MortgageLoan" _UnpaidBalanceAmount="12000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_2_0_001" BorrowerID="B_2_0" _HolderStreetAddress="2546 Columbia Pike" _HolderCity="Annandale" _HolderState="VA" _HolderPostalCode="22146" _AccountIdentifier="765876" _ExclusionIndicator="N" _HolderName="VW Financing" _MonthlyPaymentAmount="400.00" _PayoffStatusIndicator="N" _RemainingTermMonths="33" _Type="Installment" _UnpaidBalanceAmount="13000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_2_0_002" BorrowerID="B_2_0" REO_ID="R_B_2_0_001" _HolderStreetAddress="32423 Kendel Place" _HolderCity="Fairfax" _HolderState="VA" _HolderPostalCode="22033" _AccountIdentifier="234234" _ExclusionIndicator="N" _HolderName="Crestar" _MonthlyPaymentAmount="650.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="208" _Type="MortgageLoan" _UnpaidBalanceAmount="135000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_3_0_000" BorrowerID="B_3_0" _HolderStreetAddress="47829 Haon Street" _HolderCity="Miami" _HolderState="FL" _HolderPostalCode="38946" _AccountIdentifier="77632" _ExclusionIndicator="N" _HolderName="Best Buy" _MonthlyPaymentAmount="120.00" _PayoffStatusIndicator="N" _RemainingTermMonths="19" _Type="Revolving" _UnpaidBalanceAmount="2300.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_3_0_001" BorrowerID="B_3_0" _HolderStreetAddress="37000 Woodward Ave Ste 102" _HolderCity="Bloomfield Hills" _HolderState="MI" _HolderPostalCode="483040923" _AccountIdentifier="ZZ15423" _ExclusionIndicator="N" _HolderName="Allerton Community Bank Credit card" _MonthlyPaymentAmount="125" _PayoffStatusIndicator="N" _Type="Revolving" _UnpaidBalanceAmount="2500" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_3_0_002" BorrowerID="B_3_0" _HolderStreetAddress="645 Tollgate Rd Ste 110" _HolderCity="Elgin" _HolderState="IL" _HolderPostalCode="60123" _AccountIdentifier="46643333" _ExclusionIndicator="N" _HolderName="Capitol One VISA" _MonthlyPaymentAmount="139" _PayoffStatusIndicator="N" _Type="Open30DayChargeAccount" _UnpaidBalanceAmount="2780" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_3_0_003" BorrowerID="B_3_0" AlimonyOwedToName="Mary" _MonthlyPaymentAmount="400" _RemainingTermMonths="60" _Type="Alimony" />
+  <LIABILITY _ID="L_B_3_0_004" BorrowerID="B_3_0" _MonthlyPaymentAmount="100" _RemainingTermMonths="24" _Type="JobRelatedExpenses" />
+  <LIABILITY _ID="L_B_4_0_000" BorrowerID="B_4_0" REO_ID="R_B_4_0_000" _HolderStreetAddress="218923 Oak Street" _HolderCity="Chicago" _HolderState="IL" _HolderPostalCode="58976" _AccountIdentifier="234765" _ExclusionIndicator="N" _HolderName="Suntrust" _MonthlyPaymentAmount="400" _PayoffStatusIndicator="N" _RemainingTermMonths="35" _Type="MortgageLoan" _UnpaidBalanceAmount="112000" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_4_0_001" BorrowerID="B_4_0" _HolderStreetAddress="2546 Columbia Pike" _HolderCity="Annandale" _HolderState="VA" _HolderPostalCode="22146" _AccountIdentifier="765876" _ExclusionIndicator="N" _HolderName="VW Financing" _MonthlyPaymentAmount="400.00" _PayoffStatusIndicator="N" _RemainingTermMonths="33" _Type="Installment" _UnpaidBalanceAmount="13000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_4_0_002" BorrowerID="B_4_0" _HolderStreetAddress="47829 Haon Street" _HolderCity="Miami" _HolderState="FL" _HolderPostalCode="38946" _AccountIdentifier="77632" _ExclusionIndicator="N" _HolderName="Best Buy" _MonthlyPaymentAmount="120.00" _PayoffStatusIndicator="N" _RemainingTermMonths="19" _Type="Revolving" _UnpaidBalanceAmount="2300.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_4_0_003" BorrowerID="B_4_0" REO_ID="R_B_4_0_001" _HolderStreetAddress="32423 Kendel Place" _HolderCity="Fairfax" _HolderState="VA" _HolderPostalCode="22033" _AccountIdentifier="234234" _ExclusionIndicator="N" _HolderName="Crestar" _MonthlyPaymentAmount="650.00" _PayoffStatusIndicator="N" _RemainingTermMonths="208" _Type="MortgageLoan" _UnpaidBalanceAmount="135000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_000" BorrowerID="B_5_0" _HolderStreetAddress="1 Main Street" _HolderCity="Dawson" _HolderState="IA" _HolderPostalCode="500661232" _AccountIdentifier="88346175-1995" _ExclusionIndicator="N" _HolderName="DEPT STORE D" _MonthlyPaymentAmount="20.00" _PayoffStatusIndicator="N" _RemainingTermMonths="12" _Type="Revolving" _UnpaidBalanceAmount="226.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_001" BorrowerID="B_5_0" _HolderStreetAddress="2 Main Street" _HolderCity="Bethesda" _HolderState="MD" _HolderPostalCode="208142323" _AccountIdentifier="2" _ExclusionIndicator="N" _HolderName="Riggs National Bank" _MonthlyPaymentAmount="20.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="2" _Type="Open30DayChargeAccount" _UnpaidBalanceAmount="40.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_002" BorrowerID="B_5_0" _HolderStreetAddress="3 Main Street" _HolderCity="Hermosa Beach" _HolderState="CA" _HolderPostalCode="902412332" _AccountIdentifier="2127524795" _ExclusionIndicator="N" _HolderName="BANK LOAN A" _MonthlyPaymentAmount="242.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="37" _Type="Installment" _UnpaidBalanceAmount="8761.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_003" BorrowerID="B_5_0" _HolderStreetAddress="4 Main Street" _HolderCity="Chicago" _HolderState="IL" _HolderPostalCode="545772378" _AccountIdentifier="5551212202" _ExclusionIndicator="N" _HolderName="DEPT STORE E" _MonthlyPaymentAmount="10.00" _PayoffStatusIndicator="Y" _RemainingTermMonths="26" _Type="Revolving" _UnpaidBalanceAmount="253.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_004" BorrowerID="B_5_0" REO_ID="R_B_5_0_000" _HolderStreetAddress="5 Main Street" _HolderCity="Boston" _HolderState="MA" _HolderPostalCode="209543233" _AccountIdentifier="5" _ExclusionIndicator="N" _HolderName="Bank of Boston" _MonthlyPaymentAmount="1074.00" _PayoffStatusIndicator="N" _RemainingTermMonths="94" _Type="MortgageLoan" _UnpaidBalanceAmount="100000.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_005" BorrowerID="B_5_0" REO_ID="R_B_5_0_002" _HolderStreetAddress="116 Z Street" _HolderCity="Boston" _HolderState="MA" _HolderPostalCode="20954" _AccountIdentifier="34234478576" _ExclusionIndicator="N" _HolderName="Bank Of America" _MonthlyPaymentAmount="1217" _PayoffStatusIndicator="N" _RemainingTermMonths="95" _Type="MortgageLoan" _UnpaidBalanceAmount="124050.00" SubjectLoanResubordinationIndicator="N" />
+  <LIABILITY _ID="L_B_5_0_006" BorrowerID="B_5_0" AlimonyOwedToName="explanation Child support explanation" _MonthlyPaymentAmount="190" _Type="Alimony" />
+  <LOAN_PRODUCT_DATA>
+    <ARM _IndexCurrentValuePercent="6" _IndexMarginPercent="2" _IndexType="Other" _QualifyingRatePercent="5" />
+    <LOAN_FEATURES BalloonIndicator="N" BalloonLoanMaturityTermMonths="180" BuydownTemporarySubsidyIndicator="N" CounselingConfirmationIndicator="Y" EscrowWaiverIndicator="N" FREOfferingIdentifier="232" FNMProductPlanIdentifier="750-7/1 Yr Treasury 2&amp;5 Caps" GSEProjectClassificationType="F_PUD" GSEPropertyType="Attached" LienPriorityType="FirstLien" LoanRepaymentType="NoNegativeAmortization" MICoveragePercent="11" MICompanyNameType="PMI_MICorporation" PaymentFrequencyType="Monthly" ProductDescription="ASSS2151555" ScheduledFirstPaymentDate="20061215" DemandFeatureIndicator="Y" EstimatedPrepaidDays="10" />
+    <PAYMENT_ADJUSTMENT />
+    <RATE_ADJUSTMENT />
+  </LOAN_PRODUCT_DATA>
+  <LOAN_PURPOSE _Type="Purchase" PropertyRightsType="FeeSimple" PropertyUsageType="PrimaryResidence">
+    <CONSTRUCTION_REFINANCE_DATA LandOriginalCostAmount="0" RefinanceImprovementsType="Unknown" SecondaryFinancingRefinanceIndicator="N" />
+  </LOAN_PURPOSE>
+  <LOAN_QUALIFICATION AdditionalBorrowerAssetsNotConsideredIndicator="N" AdditionalBorrowerAssetsConsideredIndicator="N" />
+  <MORTGAGE_TERMS BaseLoanAmount="124000" BorrowerRequestedLoanAmount="124000" LenderCaseIdentifier="TC008.fnm" LoanAmortizationTermMonths="180" LoanAmortizationType="AdjustableRate" MortgageType="Conventional" RequestedInterestRatePercent="8.5" LoanEstimatedClosingDate="20061120" />
+  <PROPERTY _StreetAddress="8 Ash Street" _City="Fairfax" _State="VA" _County="Fairfax" _PostalCode="22033" BuildingStatusType="SubjectToAlterationImprovementRepairAndRehabilitation" _FinancedNumberOfUnits="1">
+    <_LEGAL_DESCRIPTION />
+    <_LEGAL_DESCRIPTION />
+    <_VALUATION _MethodType="FNM1004">
+      <APPRAISER />
+    </_VALUATION>
+  </PROPERTY>
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1221.08" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="OtherMortgageLoanPrincipalAndInterest" _PaymentAmount="100" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="15" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="100" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="MI" _PaymentAmount="15" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="HomeownersAssociationDuesAndCondominiumFees" _PaymentAmount="75" />
+  <PROPOSED_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="11" />
+  <REO_PROPERTY REO_ID="R_B_0_0_000" BorrowerID="B_0_0" LiabilityID="L_B_0_0_000" _StreetAddress="175 Thirteenth Street NW" _City="Washington" _State="DC" _PostalCode="20013" _CurrentResidenceIndicator="Y" _DispositionStatusType="PendingSale" _GSEPropertyType="SingleFamily" _LienInstallmentAmount="1200.00" _LienUPBAmount="145000.00" _MaintenanceExpenseAmount="100.00" _MarketValueAmount="400000.00" />
+  <REO_PROPERTY REO_ID="R_B_1_0_000" BorrowerID="B_1_0" LiabilityID="L_B_1_0_004" _StreetAddress="888 Willis Avenue" _City="Dawson" _State="IA" _PostalCode="50060" _DispositionStatusType="RetainForPrimaryOrSecondaryResidence" _GSEPropertyType="Condominium" _LienInstallmentAmount="1074.00" _LienUPBAmount="100000.00" _MaintenanceExpenseAmount="300.00" _MarketValueAmount="220000.00" />
+  <REO_PROPERTY REO_ID="R_B_1_0_001" BorrowerID="B_1_0" _StreetAddress="4 Shamrock Circle" _City="Maui" _State="HI" _PostalCode="890336786" _DispositionStatusType="RetainForRental" _GSEPropertyType="Condominium" _LienUPBAmount="0.00" _MaintenanceExpenseAmount="150.00" _MarketValueAmount="40000.00" _RentalIncomeGrossAmount="200.00" _RentalIncomeNetAmount="0.00" />
+  <REO_PROPERTY REO_ID="R_B_1_0_002" BorrowerID="B_1_0" LiabilityID="L_B_1_0_005" _StreetAddress="7 Shamrock Circle" _City="Washington" _State="DC" _PostalCode="20322" _DispositionStatusType="RetainForRental" _GSEPropertyType="Townhouse" _LienInstallmentAmount="1117.00" _LienUPBAmount="104050.00" _MaintenanceExpenseAmount="100.00" _MarketValueAmount="200000.00" _RentalIncomeGrossAmount="1200.00" _RentalIncomeNetAmount="-317.00" />
+  <REO_PROPERTY REO_ID="R_B_1_0_003" BorrowerID="B_1_0" LiabilityID="L_B_1_0_006" _StreetAddress="8 Shamrock Circle" _City="Washington" _State="DC" _PostalCode="20322" _DispositionStatusType="RetainForPrimaryOrSecondaryResidence" _GSEPropertyType="Townhouse" _LienInstallmentAmount="278.00" _LienUPBAmount="22244.00" _MaintenanceExpenseAmount="95.00" _MarketValueAmount="200000.00" />
+  <REO_PROPERTY REO_ID="R_B_2_0_000" BorrowerID="B_2_0" LiabilityID="L_B_2_0_000" _StreetAddress="175 Thirteenth Street" _City="Washington" _State="DC" _PostalCode="20013" _DispositionStatusType="RetainForPrimaryOrSecondaryResidence" _GSEPropertyType="SingleFamily" _LienInstallmentAmount="2500.00" _LienUPBAmount="200000.00" _MaintenanceExpenseAmount="3000.00" _MarketValueAmount="300000.00" />
+  <REO_PROPERTY REO_ID="R_B_2_0_001" BorrowerID="B_2_0" LiabilityID="L_B_2_0_002" _StreetAddress="12 Penndale Lane" _City="Fairfax" _State="VA" _PostalCode="22033" _DispositionStatusType="RetainForRental" _GSEPropertyType="TwoToFourUnitProperty" _LienInstallmentAmount="650.00" _LienUPBAmount="135000.00" _MaintenanceExpenseAmount="50.00" _MarketValueAmount="225000.00" _RentalIncomeGrossAmount="2000.00" _RentalIncomeNetAmount="1300.00" />
+  <REO_PROPERTY REO_ID="R_B_4_0_000" BorrowerID="B_4_0" LiabilityID="L_B_4_0_000" _StreetAddress="175 Grey  Street" _City="Washington" _State="DC" _PostalCode="20013" _DispositionStatusType="RetainForRental" _GSEPropertyType="SingleFamily" _LienInstallmentAmount="650" _LienUPBAmount="100000.00" _MaintenanceExpenseAmount="200" _MarketValueAmount="300000.00" _RentalIncomeGrossAmount="2400" _RentalIncomeNetAmount="950" />
+  <REO_PROPERTY REO_ID="R_B_4_0_001" BorrowerID="B_4_0" LiabilityID="L_B_4_0_003" _StreetAddress="12 Penndale Lane" _City="Fairfax" _State="VA" _PostalCode="22033" _DispositionStatusType="RetainForRental" _GSEPropertyType="TwoToFourUnitProperty" _LienInstallmentAmount="400" _LienUPBAmount="112000" _MaintenanceExpenseAmount="250" _MarketValueAmount="225000.00" _RentalIncomeGrossAmount="1900" _RentalIncomeNetAmount="775" />
+  <REO_PROPERTY REO_ID="R_B_5_0_000" BorrowerID="B_5_0" LiabilityID="L_B_5_0_004" _StreetAddress="7871Warm Springs Avenue" _City="Dawson" _State="IA" _PostalCode="50060" _DispositionStatusType="RetainForRental" _GSEPropertyType="Condominium" _LienInstallmentAmount="1074.00" _LienUPBAmount="100000.00" _MaintenanceExpenseAmount="300.00" _MarketValueAmount="220000.00" _RentalIncomeGrossAmount="1975" _RentalIncomeNetAmount="107" />
+  <REO_PROPERTY REO_ID="R_B_5_0_001" BorrowerID="B_5_0" _StreetAddress="77 Shamrock Circle" _City="Maui" _State="HI" _PostalCode="890336786" _DispositionStatusType="RetainForRental" _GSEPropertyType="Condominium" _LienUPBAmount="0.00" _MaintenanceExpenseAmount="150.00" _MarketValueAmount="40000.00" _RentalIncomeGrossAmount="500" _RentalIncomeNetAmount="225" />
+  <REO_PROPERTY REO_ID="R_B_5_0_002" BorrowerID="B_5_0" LiabilityID="L_B_5_0_005" _StreetAddress="7 Shamrock Circle" _City="Washington" _State="DC" _PostalCode="20322" _DispositionStatusType="RetainForRental" _GSEPropertyType="Townhouse" _LienInstallmentAmount="1217.00" _LienUPBAmount="124050.00" _MaintenanceExpenseAmount="100.00" _MarketValueAmount="200000.00" _RentalIncomeGrossAmount="1500" _RentalIncomeNetAmount="-192" />
+  <TRANSACTION_DETAIL AlterationsImprovementsAndRepairsAmount="0" BorrowerPaidDiscountPointsTotalAmount="0" EstimatedClosingCostsAmount="1000" MIAndFundingFeeFinancedAmount="0" MIAndFundingFeeTotalAmount="0" PrepaidItemsEstimatedAmount="0" PurchasePriceAmount="134000" SellerPaidClosingCostsAmount="0">
+    <PURCHASE_CREDIT _Amount="1000" />
+  </TRANSACTION_DETAIL>
+  <BORROWER BorrowerID="B_0_0" JointAssetBorrowerID="B_0_1" _FirstName="John" _MiddleName="Harmon" _LastName="Homeowner" _NameSuffix="II" _AgeAtApplicationYears="36" _ApplicationSignedDate="20061015" _PrintPositionType="Borrower" _SSN="300405000" _BirthDate="19700214" _UnparsedName="John Harmon Homeowner II" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="24" CreditReportIdentifier="VC1347213">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="" _City="Washington" _State="DC" _PostalCode="200131234" />
+    <_RESIDENCE _StreetAddress="175 Thirteenth Street NW" _City="Washington" _State="DC" _PostalCode="20013" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="4540 Talmadge" _City="Annandale" _State="VA" _PostalCode="220911234" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="5" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="7300" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithSpouse" PriorPropertyUsageType="PrimaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <EMPLOYER _Name="NIH" _StreetAddress="8050 Wisconsin Avenue" _City="Bethesda" _State="MD" _PostalCode="20730" _TelephoneNumber="3015551000" CurrentEmploymentMonthsOnJob="0" CurrentEmploymentTimeInLineOfWorkYears="8" CurrentEmploymentYearsOnJob="3" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Physician" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="Asian" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1200" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="20" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="80" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="2025551210" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="3015551000" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" _Value="3016667711" />
+    <CONTACT_POINT _Type="Fax" _Value="3017798988" />
+    <CONTACT_POINT _Type="Email" _Value="johnhomeowner@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_0_1" JointAssetBorrowerID="B_0_0" _FirstName="Mary" _MiddleName="Faith" _LastName="Homeowner" _AgeAtApplicationYears="31" _ApplicationSignedDate="20061015" _PrintPositionType="CoBorrower" _SSN="500222000" _BirthDate="19750921" _UnparsedName="Mary Faith Homeowner" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="21" CreditReportIdentifier="VC1347213">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="Post Office Box 15 Farragut St" _City="Washington" _State="DC" _PostalCode="200131234" />
+    <_RESIDENCE _StreetAddress="175 Thirteenth Street NW" _City="Washington" _State="DC" _PostalCode="20013" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="4540 Talmadge" _City="Annandale" _State="VA" _PostalCode="220911234" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="5" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="3000" />
+    <CURRENT_INCOME IncomeType="Overtime" _MonthlyTotalAmount="1000" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithSpouse" PriorPropertyUsageType="PrimaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <EMPLOYER _Name="Columbia Hospital" _StreetAddress="3514 M Street" _City="Washington" _State="DC" _PostalCode="20010" _TelephoneNumber="2025553434" CurrentEmploymentMonthsOnJob="0" CurrentEmploymentTimeInLineOfWorkYears="9" CurrentEmploymentYearsOnJob="3" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Specialist" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1200" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="20" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="80" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="2025551210" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="2025553434" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" _Value="2023334444" />
+    <CONTACT_POINT _Type="Fax" _Value="2021114444" />
+    <CONTACT_POINT _Type="Email" _Value="maryhomeowner@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_1_0" JointAssetBorrowerID="B_1_1" _FirstName="Dad" _LastName="Firstimer" _AgeAtApplicationYears="59" _ApplicationSignedDate="19970528" _PrintPositionType="Borrower" _SSN="881818881" _BirthDate="19470611" _UnparsedName="DadFirstimer" DependentCount="2" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="12">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 23" _City="Dawson" _State="IA" _PostalCode="50066" />
+    <_RESIDENCE _StreetAddress="888 Willis Avenue" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="1" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="100 Olympic Ave." _City="Atlanta" _State="GA" _PostalCode="30322" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="2" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="5000" />
+    <CURRENT_INCOME IncomeType="DividendsInterest" _MonthlyTotalAmount="10" />
+    <CURRENT_INCOME IncomeType="NotesReceivableInstallment" _MonthlyTotalAmount="50" />
+    <CURRENT_INCOME IncomeType="Trust" _MonthlyTotalAmount="150" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="Sole" PriorPropertyUsageType="SecondaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <DEPENDENT _AgeYears="10" />
+    <DEPENDENT _AgeYears="15" />
+    <EMPLOYER _Name="Olympic Committee" _StreetAddress="Olympic Highway" _City="Dawson" _State="IA" _PostalCode="500661111" _TelephoneNumber="5151324846" CurrentEmploymentMonthsOnJob="1" CurrentEmploymentTimeInLineOfWorkYears="15" CurrentEmploymentYearsOnJob="2" EmploymentBorrowerSelfEmployedIndicator="Y" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Coach" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="AmericanIndianOrAlaskaNative" />
+      <HMDA_RACE _Type="NativeHawaiianOrOtherPacificIslander" />
+      <HMDA_RACE _Type="Asian" />
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1074" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="100" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="MI" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HomeownersAssociationDuesAndCondominiumFees" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="50" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5158747148" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="5151324846" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="dadfirstimer@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_1_1" JointAssetBorrowerID="B_1_0" _FirstName="Mom" _LastName="Firstimer" _AgeAtApplicationYears="59" _ApplicationSignedDate="19970528" _PrintPositionType="CoBorrower" _SSN="882828882" _BirthDate="19470403" _UnparsedName="MomFirstimer" DependentCount="2" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="12">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="112 Clark Way" _City="Dawson" _State="IA" _PostalCode="500661234" />
+    <_RESIDENCE _StreetAddress="888 Willis Avenue" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="1" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="101 Olympic Ave." _City="Atlanta" _State="GA" _PostalCode="30322" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="2" BorrowerResidencyDurationYears="3" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="2500" />
+    <CURRENT_INCOME IncomeType="Overtime" _MonthlyTotalAmount="180" />
+    <CURRENT_INCOME IncomeType="Bonus" _MonthlyTotalAmount="210" />
+    <CURRENT_INCOME IncomeType="DividendsInterest" _MonthlyTotalAmount="20" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithSpouse" PriorPropertyUsageType="PrimaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <DEPENDENT _AgeYears="4" />
+    <DEPENDENT _AgeYears="9" />
+    <EMPLOYER _Name="Olympic Committee" _StreetAddress="Olympic Highway" _City="Dawson" _State="IA" _PostalCode="50066" _TelephoneNumber="5152347148" CurrentEmploymentMonthsOnJob="1" CurrentEmploymentTimeInLineOfWorkYears="25" CurrentEmploymentYearsOnJob="2" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Nurse -- RN" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="AmericanIndianOrAlaskaNative" />
+      <HMDA_RACE _Type="Asian" />
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1074" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="100" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="MI" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HomeownersAssociationDuesAndCondominiumFees" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="50" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5158747148" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="5152347148" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="momfirstimer@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_2_0" JointAssetBorrowerID="B_2_1" _FirstName="Andy" _MiddleName="T" _LastName="America" _AgeAtApplicationYears="30" _PrintPositionType="Borrower" _SSN="500603333" _BirthDate="19760704" _UnparsedName="Andy T America" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Unknown">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="111 Drumm" _City="Gaithersburg" _State="MD" _PostalCode="20899" />
+    <_RESIDENCE _StreetAddress="4321 Cul de Sac Street" _City="Fall River" _State="MA" _PostalCode="02723" BorrowerResidencyBasisType="LivingRentFree" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="9991 Warford St" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="LivingRentFree" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="7300" />
+    <CURRENT_INCOME IncomeType="NetRentalIncome" _MonthlyTotalAmount="1300" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <EMPLOYER _Name="Vandelay Industries" CurrentEmploymentMonthsOnJob="3" CurrentEmploymentYearsOnJob="6" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="600" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherMortgageLoanPrincipalAndInterest" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="20" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="andyamerica@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_2_1" JointAssetBorrowerID="B_2_0" _FirstName="Amy" _LastName="America" _AgeAtApplicationYears="30" _PrintPositionType="CoBorrower" _SSN="500602222" _BirthDate="19760501" _UnparsedName="AmyAmerica" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Unknown">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="112 Drumm" _City="Gaithersburg" _State="MD" _PostalCode="20899" />
+    <_RESIDENCE _StreetAddress="4321 Cul de Sac Street" _City="Fall River" _State="MA" _PostalCode="02723" BorrowerResidencyBasisType="LivingRentFree" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="9991 Warford St" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="LivingRentFree" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="3000" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <EMPLOYER _Name="Jumper" CurrentEmploymentMonthsOnJob="1" CurrentEmploymentYearsOnJob="3" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="NativeHawaiianOrOtherPacificIslander" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="600" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherMortgageLoanPrincipalAndInterest" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="20" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="amyamerica@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_3_0" JointAssetBorrowerID="B_3_1" _FirstName="Patrick" _LastName="Purchaser" _AgeAtApplicationYears="66" _PrintPositionType="Borrower" _SSN="999121234" _BirthDate="19400729" _UnparsedName="PatrickPurchaser" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 10 Second St" _City="Baltimore" _State="MD" _PostalCode="20600" />
+    <_RESIDENCE _StreetAddress="1234 Main Street" _City="Baltimore" _State="MD" _PostalCode="20600" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="10895 Edson Park" _City="Bethesda" _State="MD" _PostalCode="20892" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Prior" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="White" />
+    </GOVERNMENT_MONITORING>
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="patrickpurchaser@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_3_1" JointAssetBorrowerID="B_3_0" _FirstName="Lorraine" _LastName="Purchaser" _AgeAtApplicationYears="50" _PrintPositionType="CoBorrower" _SSN="888565678" _BirthDate="19560120" _UnparsedName="LorrainePurchaser" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 11" _City="Waldorf" _State="MD" _PostalCode="20601" />
+    <_RESIDENCE _StreetAddress="1235 Main Street" _City="Baltimore" _State="MD" _PostalCode="20600" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="10895 Edson Park" _City="Bethesda" _State="MD" _PostalCode="20892" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="3500" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="AmericanIndianOrAlaskaNative" />
+    </GOVERNMENT_MONITORING>
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="lorrainepurchaser@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_4_0" JointAssetBorrowerID="B_4_1" _FirstName="Jack" _MiddleName="Jonathan" _LastName="Purchaser" _AgeAtApplicationYears="56" _PrintPositionType="Borrower" _SSN="119121234" _BirthDate="19500729" _UnparsedName="Jack Jonathan Purchaser" DependentCount="2" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="16">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 13 Second St" _City="Baltimore" _State="MD" _PostalCode="20600" />
+    <_RESIDENCE _StreetAddress="7721 Abe de Lac Street" _City="Fall River" _State="MA" _PostalCode="02723" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="8" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="9991 Warford St" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="2" BorrowerResidencyType="Prior" />
+    <_RESIDENCE _StreetAddress="10895 Edson Park" _City="Bethesda" _State="MD" _PostalCode="20892" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="25300" />
+    <CURRENT_INCOME IncomeType="NetRentalIncome" _MonthlyTotalAmount="1725" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <DEPENDENT _AgeYears="15" />
+    <DEPENDENT _AgeYears="18" />
+    <EMPLOYER _Name="ABC Jumpers" _StreetAddress="131 W Green Lane" _City="Albuquerque" _State="NM" _PostalCode="87112" _TelephoneNumber="5554132442" CurrentEmploymentMonthsOnJob="5" CurrentEmploymentTimeInLineOfWorkYears="10" CurrentEmploymentYearsOnJob="5" EmploymentBorrowerSelfEmployedIndicator="Y" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Owner" EmploymentPrimaryIndicator="Y" />
+    <EMPLOYER _Name="Bobby's Gifts" _StreetAddress="666 Tree lane ,Suite 308" _City="Albuquerque" _State="NM" _PostalCode="87112" _TelephoneNumber="5551414444" CurrentEmploymentMonthsOnJob="10" CurrentEmploymentYearsOnJob="6" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Accountant" EmploymentPrimaryIndicator="N" IncomeEmploymentMonthlyAmount="5000" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="HispanicOrLatino">
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="600" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherMortgageLoanPrincipalAndInterest" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="20" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5051618899" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="5554132442" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="patrickpurchaser@fanniemae.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_4_1" JointAssetBorrowerID="B_4_0" _FirstName="Jennifier" _MiddleName="Agatha" _LastName="Purchaser" _AgeAtApplicationYears="48" _PrintPositionType="CoBorrower" _SSN="288565679" _BirthDate="19571101" _UnparsedName="Jennifier Agatha Purchaser" DependentCount="2" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="16">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 13 Second St" _City="Baltimore" _State="MD" _PostalCode="20600" />
+    <_RESIDENCE _StreetAddress="7721 Abe de Lac Street" _City="Fall River" _State="MA" _PostalCode="02723" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="8" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="9991 Warford St" _City="Dawson" _State="IA" _PostalCode="50066" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="2" BorrowerResidencyType="Prior" />
+    <_RESIDENCE _StreetAddress="10895 Edson Park" _City="Bethesda" _State="MD" _PostalCode="20892" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="0" BorrowerResidencyDurationYears="5" BorrowerResidencyType="Prior" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="No" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithOtherThanSpouse" PriorPropertyUsageType="Investment" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <DEPENDENT _AgeYears="15" />
+    <DEPENDENT _AgeYears="18" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="AmericanIndianOrAlaskaNative" />
+      <HMDA_RACE _Type="BlackOrAfricanAmerican" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="600" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherMortgageLoanPrincipalAndInterest" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="25" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="20" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5051618899" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_5_0" JointAssetBorrowerID="B_5_1" _FirstName="Garfield" _MiddleName="Jones" _LastName="Firstimer" _NameSuffix="II" _AgeAtApplicationYears="59" _ApplicationSignedDate="19970528" _PrintPositionType="Borrower" _SSN="771818881" _BirthDate="19470319" _UnparsedName="Garfield Jones Firstimer II" DependentCount="2" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="12">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="PO Box 77" _City="Decatur" _State="IA" _PostalCode="50067" />
+    <_RESIDENCE _StreetAddress="777 Willis Avenue" _City="Decatur" _State="IA" _PostalCode="50067" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="2" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="100 Blue Ave" _City="Clayton" _State="GA" _PostalCode="30525" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="10" BorrowerResidencyDurationYears="4" BorrowerResidencyType="Prior" />
+    <_RESIDENCE _StreetAddress="200 Brown Street" _City="Addyston" _State="OH" _PostalCode="45001" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="7" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="5000" />
+    <CURRENT_INCOME IncomeType="DividendsInterest" _MonthlyTotalAmount="10" />
+    <CURRENT_INCOME IncomeType="NetRentalIncome" _MonthlyTotalAmount="140" />
+    <CURRENT_INCOME IncomeType="NotesReceivableInstallment" _MonthlyTotalAmount="50" />
+    <CURRENT_INCOME IncomeType="Trust" _MonthlyTotalAmount="150" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="Sole" PriorPropertyUsageType="SecondaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <DEPENDENT _AgeYears="10" />
+    <DEPENDENT _AgeYears="15" />
+    <EMPLOYER _Name="Olympic Committee" _StreetAddress="Olympic Highway" _City="Dawson" _State="IA" _PostalCode="500661111" _TelephoneNumber="5159324877" CurrentEmploymentMonthsOnJob="4" CurrentEmploymentTimeInLineOfWorkYears="15" CurrentEmploymentYearsOnJob="5" EmploymentBorrowerSelfEmployedIndicator="Y" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Coach" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Male" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="White" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1074" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="100" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="MI" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HomeownersAssociationDuesAndCondominiumFees" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="50" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5159247148" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="5159324877" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" _Value="5158776112" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="firstimer@aol.com" />
+  </BORROWER>
+  <BORROWER BorrowerID="B_5_1" JointAssetBorrowerID="B_5_0" _FirstName="Mary" _LastName="Firstimer" _AgeAtApplicationYears="55" _ApplicationSignedDate="19970528" _PrintPositionType="CoBorrower" _SSN="662828882" _BirthDate="19501103" _UnparsedName="MaryFirstimer" JointAssetLiabilityReportingType="Jointly" MaritalStatusType="Married" SchoolingYears="12">
+    <_ALIAS />
+    <_MAIL_TO _StreetAddress="9912 Spiderman Way" _City="Decatur" _State="IA" _PostalCode="50067" />
+    <_RESIDENCE _StreetAddress="777 Willis Avenue" _City="Decatur" _State="IA" _PostalCode="50067" BorrowerResidencyBasisType="Own" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="2" BorrowerResidencyType="Current" />
+    <_RESIDENCE _StreetAddress="100 Blue Ave" _City="Clayton" _State="GA" _PostalCode="30525" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="10" BorrowerResidencyDurationYears="4" BorrowerResidencyType="Prior" />
+    <_RESIDENCE _StreetAddress="200 Brown Street" _City="Addyston" _State="OH" _PostalCode="45001" BorrowerResidencyBasisType="Rent" BorrowerResidencyDurationMonths="6" BorrowerResidencyDurationYears="7" BorrowerResidencyType="Prior" />
+    <CURRENT_INCOME IncomeType="Base" _MonthlyTotalAmount="2500" />
+    <CURRENT_INCOME IncomeType="Overtime" _MonthlyTotalAmount="180" />
+    <CURRENT_INCOME IncomeType="Bonus" _MonthlyTotalAmount="210" />
+    <CURRENT_INCOME IncomeType="DividendsInterest" _MonthlyTotalAmount="20" />
+    <DECLARATION AlimonyChildSupportObligationIndicator="N" BankruptcyIndicator="N" BorrowedDownPaymentIndicator="N" CitizenshipResidencyType="USCitizen" CoMakerEndorserOfNoteIndicator="N" HomeownerPastThreeYearsType="Yes" IntentToOccupyType="Yes" LoanForeclosureOrJudgementIndicator="N" OutstandingJudgementsIndicator="N" PartyToLawsuitIndicator="N" PresentlyDelinquentIndicator="N" PriorPropertyTitleType="JointWithSpouse" PriorPropertyUsageType="PrimaryResidence" PropertyForeclosedPastSevenYearsIndicator="N" />
+    <EMPLOYER _Name="General Hospital" _StreetAddress="112 West Primrose lane" _City="Dawson" _State="IA" _PostalCode="50066" _TelephoneNumber="5159947148" CurrentEmploymentMonthsOnJob="2" CurrentEmploymentTimeInLineOfWorkYears="25" CurrentEmploymentYearsOnJob="20" EmploymentBorrowerSelfEmployedIndicator="N" EmploymentCurrentIndicator="Y" EmploymentPositionDescription="Nurse" EmploymentPrimaryIndicator="Y" />
+    <FHA_VA_BORROWER VeteranStatusIndicator="N" />
+    <GOVERNMENT_MONITORING GenderType="Female" RaceNationalOriginRefusalIndicator="N" HMDAEthnicityType="NotHispanicOrLatino">
+      <HMDA_RACE _Type="White" />
+    </GOVERNMENT_MONITORING>
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="FirstMortgagePrincipalAndInterest" _PaymentAmount="1074" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HazardInsurance" _PaymentAmount="100" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="RealEstateTax" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="MI" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="HomeownersAssociationDuesAndCondominiumFees" _PaymentAmount="50" />
+    <PRESENT_HOUSING_EXPENSE HousingExpenseType="OtherHousingExpense" _PaymentAmount="50" />
+    <VA_BORROWER />
+    <FHA_BORROWER _CertificationLeadPaintIndicator="N" />
+    <_NEAREST_LIVING_RELATIVE />
+    <CONTACT_POINT _RoleType="Home" _Type="Phone" _Value="5159847148" />
+    <CONTACT_POINT _RoleType="Work" _Type="Phone" _Value="5159947148" />
+    <CONTACT_POINT _RoleType="Mobile" _Type="Phone" />
+    <CONTACT_POINT _Type="Fax" />
+    <CONTACT_POINT _Type="Email" _Value="firstimer@aol.com" />
+  </BORROWER>
+  <ESCROW _AnnualPaymentAmount="180" _CollectedNumberOfMonthsCount="2" _ItemType="HazardInsurance" _PremiumPaymentType="CollectAtClosing" />
+  <ESCROW _AnnualPaymentAmount="132" _CollectedNumberOfMonthsCount="4" _ItemType="SchoolPropertyTax" _PremiumPaymentType="CollectAtClosing" />
+  <ESCROW _AnnualPaymentAmount="1200" _CollectedNumberOfMonthsCount="1" _ItemType="Assessment" _PremiumPaymentType="CollectAtClosing" />
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="LoanOriginationFee">
+    <_PAYMENT _Amount="1000" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="LoanDiscountPoints">
+    <_PAYMENT _Amount="500" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="AppraisalFee">
+    <_PAYMENT _Amount="45" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="CreditReportFee">
+    <_PAYMENT _Amount="13" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="InspectionFee">
+    <_PAYMENT _Amount="33" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="MortgageBrokerFee">
+    <_PAYMENT _Amount="296.2" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="TaxRelatedServiceFee">
+    <_PAYMENT _Amount="30" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="ProcessingFee">
+    <_PAYMENT _Amount="40" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="UnderwritingFee">
+    <_PAYMENT _Amount="45" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="800:LoanFees" _Type="Other" _TypeOtherDescription="Wire Transfer">
+    <_PAYMENT _Amount="50" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1100:TitleCharges" _Type="SettlementOrClosingFee">
+    <_PAYMENT _Amount="100" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1100:TitleCharges" _Type="DocumentPreparationFee">
+    <_PAYMENT _Amount="111" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1100:TitleCharges" _Type="NotaryFee">
+    <_PAYMENT _Amount="122" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1100:TitleCharges" _Type="AttorneyFee">
+    <_PAYMENT _Amount="99" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1200:RecordingAndTransferCharges" _Type="MortgageRecordingFee">
+    <_PAYMENT _Amount="110" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1200:RecordingAndTransferCharges" _Type="CityCountyMortgageTaxStampFee">
+    <_PAYMENT _Amount="55" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <RESPA_FEE RESPASectionClassificationType="1300:AdditionalSettlementFees" _Type="PestInspectionFee">
+    <_PAYMENT _Amount="22" _AllowableFHAClosingCostIndicator="N" _IncludedInAPRIndicator="N" _PaidOutsideOfClosingIndicator="N" _ProcessType="Processing" />
+  </RESPA_FEE>
+  <MI_DATA MIPremiumRefundableType="RefundableWithLimits" MIRenewalCalculationType="NotApplicable" MIDurationType="NotApplicable" MICollectedNumberOfMonthsCount="3">
+    <MI_RENEWAL_PREMIUM />
+  </MI_DATA>
+  <DISCLOSURE_DATA>
+    <RESPA_SUMMARY _TotalAmountFinancedAmount="124000" _TotalOfAllPaymentsAmount="222493.38" APR="8.706" />
+  </DISCLOSURE_DATA>
+</LOAN_APPLICATION>

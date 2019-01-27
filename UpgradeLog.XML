@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CompleteDataBaseAccess">
+</Property><Property Name="Solution File" Value="C:\Aniruddha S. Kushwaha Projects\CompleteDataBaseAccess\CompleteDataBaseAccess 7th Oct 2006\CompleteDataBaseAccess.sln">
+</Property><Property Name="Date" Value="Friday, December 29, 2006">
+</Property><Property Name="Time" Value="22:24 PM">
+</Property></Properties><Event ErrorLevel="0" Project="CompleteDataBaseAccess" Source="CompleteDataBaseAccess.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CompleteDataBaseAccess" Source="CompleteDataBaseAccess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CompleteDataBaseAccess.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CompleteDataBaseAccess.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CompleteDataBaseAccess" Source="CompleteDataBaseAccess.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,60 @@
+2007-06-15 20:18:28.000--MySQL OLE DB Provider has not been activated.Error code: 800410FF
+2007-06-18 14:45:26.000--[1]: Table 'mysql.tables' doesn't existError code: 80040101
+2007-06-18 14:50:51.000--[1]: Unknown table 'help_category' in information_schemaError code: 80040101
+2007-06-18 16:23:27.000--[1]: Lost connection to MySQL server during queryError code: 80040101
+2007-06-18 16:24:47.000--[1]: String 'root@localhost PROCEDURE ` pcolumns_priv_IU`(	IN Flag Char,	IN Host' is too long for user name (should be no longer than 16)Error code: 80040101
+2007-06-18 16:31:58.000--[1]: String 'root@localhost PROCEDURE ` pcolumns_priv_IU`(	IN Flag Char,	IN Host' is too long for user name (should be no longer than 16)Error code: 80040101
+2007-06-18 16:32:30.000--[1]: String 'root@localhost PROCEDURE ` phelp_topic_IU`(	IN Flag Char,	IN help_t' is too long for user name (should be no longer than 16)Error code: 80040101
+2007-06-18 16:34:49.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASBEGIN	IF Flag='I'	BEGIN		INSERT INTO help_topic(help_topic_id,name,help_ca' at line 1Error code: 80040101
+2007-07-09 12:11:39.000--MySQL OLE DB Provider activation code expired.Error code: 800410FF
+2007-07-09 13:01:00.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASBEGIN	IF Flag='I'	BEGIN		INSERT INTO user(Host,User,Password,Select_priv,I' at line 1Error code: 80040101
+2007-07-09 13:03:18.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS BEGIN  IF Flag='I'  BEGIN   INSERT INTO user(Host,User,Password,Select_priv,I' at line 1Error code: 80040101
+2007-07-09 13:14:03.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BEGIN   INSERT INTO host(Host,Db,Select_priv,Insert_priv,Update_priv,Delete_priv' at line 1Error code: 80040101
+2007-07-09 14:08:32.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ $$ CREATE PROCEDURE ptime_zone_name_IU (  _Flag Char,  _Name char(6' at line 1Error code: 80040101
+2007-07-09 15:11:10.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ $$ CREATE PROCEDURE pusermaster_IU (  _Flag Char,  _UserId bigint(2' at line 1Error code: 80040101
+2007-07-09 15:35:27.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ $$ CREATE PROCEDURE pusermaster_IU (  _Flag Char,  _UserId bigint(2' at line 1Error code: 80040101
+2007-07-09 15:35:59.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ $$ CREATE PROCEDURE pusermaster_IU (  _Flag Char,  _UserId bigint(2' at line 1Error code: 80040101
+2007-07-09 15:37:49.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$
+$$ CREATE PROCEDURE pusermaster_IU
+(
+	_Flag Char,
+	_UserId bigi' at line 1Error code: 80040101
+2007-07-09 15:39:00.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$$$ CREATE PROCEDURE pusermaster_IU(	_Flag Char,	_UserId bigint(2' at line 1Error code: 80040101
+2007-07-09 15:54:41.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ $$ CREATE PROCEDURE pusermaster_IU ( _Flag Char, _UserId bigint(20)' at line 1Error code: 80040101
+2007-07-09 15:57:02.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$
+$$ CREATE PROCEDURE pusermaster_IU
+(
+_Flag Char,
+_UserId bigint(20)' at line 1Error code: 80040101
+2007-07-09 16:28:04.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$; $$ CREATE PROCEDURE pusermaster_IU(	_Flag Char, _UserId bigint(20)' at line 1Error code: 80040101
+2007-07-09 16:38:06.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$' at line 1Error code: 80040101
+2007-07-09 16:39:13.000--[1]: Unknown table 'usermaster' in information_schemaError code: 80040101
+2007-07-09 16:42:16.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ 
+$$ CREATE PROCEDURE pusermaster_IU( _Flag Char, _UserId bigint(20)' at line 1Error code: 80040101
+2007-07-09 16:44:04.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ 
+$$ CREATE PROCEDURE pusermaster_IU( _Flag Char, _UserId bigint(20' at line 1Error code: 80040101
+2007-07-09 18:45:15.000--[1]: Unknown table 'usermaster' in information_schemaError code: 80040101
+2007-07-10 19:16:11.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SP_HELP columns_priv' at line 1Error code: 80040101
+2007-07-13 18:07:49.000--[1]: Table 'mysql.usermaster' doesn't existError code: 80040101
+2007-07-13 18:07:52.000--[1]: Table 'mysql.usermaster' doesn't existError code: 80040101
+2007-07-13 18:19:22.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1Error code: 80040101
+2007-07-16 17:32:09.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$; 
+$$ CREATE PROCEDURE pprocess_IU(
+ _Flag Char,
+   _ProcessId bi' at line 1Error code: 80040101
+2007-07-16 17:33:48.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER $$ 
+$$ CREATE PROCEDURE pprocess_IU(
+ _Flag Char,
+   _ProcessId big' at line 1Error code: 80040101
+2007-07-16 18:14:12.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sp_tables' at line 1Error code: 80040101
+2007-07-16 18:57:10.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SP_HELP process' at line 1Error code: 80040101
+2007-07-16 19:01:09.000--[1]: Unknown table 'process' in information_schemaError code: 80040101
+2007-07-16 19:01:34.000--[1]: Unknown table 'process_applicationsinvolved' in information_schemaError code: 80040101
+2007-07-16 19:13:22.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SP_HELP pprocess_IU' at line 1Error code: 80040101
+2007-07-16 19:24:44.000--[1]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''pprocess_S' at line 1Error code: 80040101
+2007-07-17 01:52:42.000--[1]: Lost connection to MySQL server during queryError code: 80040101
+2007-07-17 11:05:12.000--[1]: Lost connection to MySQL server during queryError code: 80040101
+2007-07-17 22:31:14.000--[1]: Lost connection to MySQL server during queryError code: 80040101
+2007-08-13 22:37:05.000--MySQL OLE DB Provider activation code expired.Error code: 800410FF
+2007-08-13 22:37:51.000--MySQL OLE DB Provider activation code expired.Error code: 800410FF
+2007-10-10 23:17:38.000--MySQL OLE DB Provider activation code expired.Error code: 800410FF

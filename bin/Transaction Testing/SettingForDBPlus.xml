@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <InsertPre>usp</InsertPre>
+    <InsertPost>_I</InsertPost>
+    <InsertUpdatePre>usp</InsertUpdatePre>
+    <InsertUpdatePost>_IU</InsertUpdatePost>
+    <SelectPre>usp</SelectPre>
+    <SelectPost>_S</SelectPost>
+    <DeletePre>usp</DeletePre>
+    <DeletePost>_D</DeletePost>
+    <CommentForProcedure>Procedure Name:
+Created By: Aniruddha Singh Kushwaha
+Created Date: 2nd Jan 2009
+Modified By: 
+Modified Date: 
+</CommentForProcedure>
+    <SelectStore>DataTable</SelectStore>
+    <DatabaseInsert>ins</DatabaseInsert>
+    <DatabaseUpdate>upd</DatabaseUpdate>
+    <DatabaseDelete>del</DatabaseDelete>
+    <DatabaseSelect>get</DatabaseSelect>
+    <DatabaseChecking>ifExisting</DatabaseChecking>
+    <Normal>Centrum</Normal>
+    <Client>Centrum.BD</Client>
+    <Server>Centrum.BO</Server>
+    <IsSameServer>False</IsSameServer>
+    <IsSameClient>False</IsSameClient>
+    <ClassPrefix />
+    <ClassPostfix>BO</ClassPostfix>
+    <ObjectInitial>o</ObjectInitial>
+    <PropertyClassPrefix>Obj</PropertyClassPrefix>
+    <PropertyClassPostfix>BD</PropertyClassPostfix>
+    <DSN>OleMySql.MySqlSource.1</DSN>
+  </Table1>
+</NewDataSet>

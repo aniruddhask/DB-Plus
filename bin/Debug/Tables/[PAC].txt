@@ -1,0 +1,197 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCategory](
+	[CategoryId] [bigint] IDENTITY(1,1) NOT NULL,
+	[CategoryName] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[ParentId] [bigint] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblClassMaster](
+	[ClassMasterId] [bigint] IDENTITY(1,1) NOT NULL,
+	[Class] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Stream] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCurrentClass](
+	[CurrentClassId] [bigint] IDENTITY(1,1) NOT NULL,
+	[RegistrationId] [bigint] NULL,
+	[SectionClassId] [bigint] NULL,
+	[CurrentClass] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblFeeDiscount](
+	[FeeDiscountId] [bigint] IDENTITY(1,1) NOT NULL,
+	[CategoryId] [bigint] NULL,
+	[FeeTypeId] [bigint] NULL,
+	[Discount] [decimal](10, 2) NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblFeeMaster](
+	[FeeMasterId] [bigint] IDENTITY(1,1) NOT NULL,
+	[ClassMasterId] [bigint] NULL,
+	[CategoryId] [bigint] NULL,
+	[FeeTypeId] [bigint] NULL,
+	[Amount] [decimal](10, 2) NULL,
+	[WEF] [datetime] NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblFeeType](
+	[FeeTypeId] [bigint] IDENTITY(1,1) NOT NULL,
+	[FeeType] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblPaymentDetail](
+	[PaymentDetailId] [bigint] IDENTITY(1,1) NOT NULL,
+	[PaymentMasterId] [bigint] NULL,
+	[FeeTypeId] [bigint] NULL,
+	[Date] [datetime] NULL,
+	[Amount] [decimal](10, 2) NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[ExpAmount] [decimal](10, 2) NULL,
+	[Comment] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblPaymentMaster](
+	[PaymentMasterId] [bigint] IDENTITY(1,1) NOT NULL,
+	[PaymentModeId] [bigint] NULL,
+	[RegistrationId] [bigint] NULL,
+	[CurrentClassId] [bigint] NULL,
+	[ChequeDDNumber] [bigint] NULL,
+	[Bank] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Branch] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[Amount] [decimal](10, 2) NULL,
+	[ChequeComment] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblPaymentMode](
+	[PaymentModeId] [bigint] IDENTITY(1,1) NOT NULL,
+	[PaymentMode] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblRegistration](
+	[RegistrationId] [bigint] IDENTITY(1,1) NOT NULL,
+	[RegistrationNumber] [bigint] NULL,
+	[Name] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Gender] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[DateOfBirth] [datetime] NULL,
+	[IdentificationMark] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[FatherName] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[MotherName] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[PermanentAddress] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[LocalAddress] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[ContactNumber] [bigint] NULL,
+	[CategoryId] [bigint] NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[SiblingId] [bigint] NULL,
+	[RegistrationDate] [datetime] NULL,
+	[ManualRegistrationNo] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblSectionClass](
+	[SectionClassId] [bigint] IDENTITY(1,1) NOT NULL,
+	[ClassMasterId] [bigint] NULL,
+	[Section] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblSettings](
+	[SettingId] [bigint] IDENTITY(1,1) NOT NULL,
+	[PerDayFine] [decimal](10, 2) NULL,
+	[ChequeBouncePanality] [decimal](10, 2) NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[LastFeeSubmitDay] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblStudentMaster](
+	[StudentMasterId] [bigint] IDENTITY(1,1) NOT NULL,
+	[SectionClassId] [bigint] NULL,
+	[RegistrationId] [bigint] NULL,
+	[RollNumber] [int] NULL,
+	[CurrentDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[FeeBookNo] [bigint] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************

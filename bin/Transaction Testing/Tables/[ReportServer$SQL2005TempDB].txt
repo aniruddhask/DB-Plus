@@ -1,0 +1,109 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ChunkData](
+	[ChunkID] [uniqueidentifier] NOT NULL,
+	[SnapshotDataID] [uniqueidentifier] NOT NULL,
+	[ChunkFlags] [tinyint] NULL,
+	[ChunkName] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[ChunkType] [int] NULL,
+	[Version] [smallint] NULL,
+	[MimeType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Content] [image] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[ExecutionCache](
+	[ExecutionCacheID] [uniqueidentifier] NOT NULL,
+	[ReportID] [uniqueidentifier] NOT NULL,
+	[ExpirationFlags] [int] NOT NULL,
+	[AbsoluteExpiration] [datetime] NULL,
+	[RelativeExpiration] [int] NULL,
+	[SnapshotDataID] [uniqueidentifier] NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[PersistedStream](
+	[SessionID] [varchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[Index] [int] NOT NULL,
+	[Content] [image] NULL,
+	[Name] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[MimeType] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Extension] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Encoding] [nvarchar](260) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Error] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[RefCount] [int] NOT NULL,
+	[ExpirationDate] [datetime] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[SessionData](
+	[SessionID] [varchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL,
+	[CompiledDefinition] [uniqueidentifier] NULL,
+	[SnapshotDataID] [uniqueidentifier] NULL,
+	[IsPermanentSnapshot] [bit] NULL,
+	[ReportPath] [nvarchar](424) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Timeout] [int] NOT NULL,
+	[AutoRefreshSeconds] [int] NULL,
+	[Expiration] [datetime] NOT NULL,
+	[ShowHideInfo] [image] NULL,
+	[DataSourceInfo] [image] NULL,
+	[OwnerID] [uniqueidentifier] NOT NULL,
+	[EffectiveParams] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[CreationTime] [datetime] NOT NULL,
+	[HasInteractivity] [bit] NULL,
+	[SnapshotExpirationDate] [datetime] NULL,
+	[HistoryDate] [datetime] NULL,
+	[PageHeight] [float] NULL,
+	[PageWidth] [float] NULL,
+	[TopMargin] [float] NULL,
+	[BottomMargin] [float] NULL,
+	[LeftMargin] [float] NULL,
+	[RightMargin] [float] NULL,
+	[ExecutionType] [smallint] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[SessionLock](
+	[SessionID] [varchar](32) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[SnapshotData](
+	[SnapshotDataID] [uniqueidentifier] NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[ParamsHash] [int] NULL,
+	[QueryParams] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[EffectiveParams] [ntext] COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[Description] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NULL,
+	[DependsOnUser] [bit] NULL,
+	[PermanentRefcount] [int] NOT NULL,
+	[TransientRefcount] [int] NOT NULL,
+	[ExpirationDate] [datetime] NOT NULL,
+	[PageCount] [int] NULL,
+	[HasDocMap] [bit] NULL,
+	[Machine] [nvarchar](512) COLLATE Latin1_General_CI_AS_KS_WS NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************

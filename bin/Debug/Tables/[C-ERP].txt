@@ -1,0 +1,509 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMAccountHead](
+	[AccountHeadId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[AccountHeadTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Name] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[AccountType] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[OrderNo] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMAccountHeadType](
+	[AccountHeadTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Name] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[GroupName] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[OrderNo] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMDepartmentDesignation](
+	[DepartmentDesignationId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[DepartmentMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[OrderNo] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMDepartmentEmployee](
+	[DepartmentEmployeeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[DepartmentDesignationId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[UserLoginId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMDepartmentMaster](
+	[DepartmentMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Description] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMEmploymentTypeLeaves](
+	[EmployeeLeaveTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[EmploymentTypeMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[LeaveTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[NoOfLeave] [int] NULL,
+	[MaxAllowedOneTime] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[AllowForwarding] [int] NULL,
+	[MaxForwardingAllowed] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMEmploymentTypeMaster](
+	[EmploymentTypeMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Description] [varchar](512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMLeaveMatrix](
+	[LeaveMatrixId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[LeaveTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CompatibleLeaveTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Iscompatible] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblAMLeaveType](
+	[LeaveTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Description] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCityMaster](
+	[CityMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[StateMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMCourseMaster](
+	[CourseMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[CourseName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CourseAffialation] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[ReferencNo] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[NoOfSemester] [int] NULL,
+	[NoOfSeat] [int] NULL,
+	[Duration] [int] NULL,
+	[ApprovedBy] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSemesterMaster](
+	[SemesterMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SemesterName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[OrderNo] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionCourse](
+	[SessionCourseId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[CourseMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SessionMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[NoOfSeat] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionCourseSemester](
+	[SessionCourseSemesterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SessionCourseId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SemesterMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SemesterDuration] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionCourseSemesterStudent](
+	[SessionCourseSemesterStudentId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserLoginId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SessionCourseSemesterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionCourseSemesterStudentSubject](
+	[SessionCourseSemesterStudentSubjectId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SessionCourseSemesterStudentId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SessionCourseSemesterSubjectId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Result] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionCourseSemesterSubject](
+	[SessionCourseSemesterSubjectId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SessionCourseSemesterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SubjectMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[IsOptional] [int] NULL,
+	[GroupName] [varchar](1024) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SubjectCode] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSessionMaster](
+	[SessionMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SessionName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[StartDate] [datetime] NULL,
+	[EndDate] [datetime] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCMSubjectMaster](
+	[SubjectMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SubjectName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SubjectType] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Description] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblCountryMaster](
+	[CountryMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblError](
+	[ErrorId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Page] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Method] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Error] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserLoginId] [bigint] NULL,
+	[CreatedDateTime] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblHelpMaster](
+	[HelpMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Description] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblHowDoI](
+	[HowDoIId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Question] [varchar](512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Answer] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[NoOfHits] [bigint] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblMessageMaster](
+	[MessageMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[MessageCode] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[MessageText] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblNextAutoNumber](
+	[NextAutoNumberId] [bigint] IDENTITY(1,1) NOT NULL,
+	[TableName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[TableRef] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[LastUsedId] [bigint] NULL,
+	[PrefixCode] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cDate] [datetime] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblProcess](
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ParentProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[IsMenuItem] [int] NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[IconUrl] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[cDateTime] [datetime] NULL,
+	[NavigationUrl] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[OrderId] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblQuickLinks](
+	[QuickLinkId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[QuickProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblStateMaster](
+	[StateMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[CountryMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblTest](
+	[TableId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserDetail](
+	[UserDetailId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserLoginId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Name] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[DOB] [datetime] NULL,
+	[Phone] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[ImageUrl] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[FatherName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[MotherName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Gender] [varchar](16) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[EmergencyNo] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[PermanentAddress] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CorrespondenceAddress] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[PostalCode] [int] NULL,
+	[StateMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CityMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CityName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[UserTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[MaritalStatus] [varchar](32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[HusbandName] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cPostalCode] [int] NULL,
+	[cCityName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cPhone] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cStateMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cCityMasterId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserLogin](
+	[UserLoginId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserName] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Password] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Email] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Mobile] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[cDate] [datetime] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserSession](
+	[UserSessionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserLoginId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SessionStart] [datetime] NULL,
+	[SessionEnd] [datetime] NULL,
+	[Status] [int] NULL,
+	[cDateTime] [datetime] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserTransaction](
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserSessionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[cDate] [datetime] NULL,
+	[Status] [int] NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserType](
+	[UserTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[UserType] [varchar](64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[tblUserTypeProcess](
+	[UserTypeProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ProcessId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[UserTypeId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CanView] [int] NULL,
+	[CanAdd] [int] NULL,
+	[CanEdit] [int] NULL,
+	[CanDelete] [int] NULL,
+	[Status] [int] NULL,
+	[UserTransactionId] [varchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+                                                       
+                                                       
+*******************************************************

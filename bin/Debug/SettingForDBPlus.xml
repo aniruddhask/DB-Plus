@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <InsertPre>usp</InsertPre>
+    <InsertPost>Insert</InsertPost>
+    <InsertUpdatePre>usp</InsertUpdatePre>
+    <InsertUpdatePost>InsertUpdate</InsertUpdatePost>
+    <SelectPre>usp</SelectPre>
+    <SelectPost>Select</SelectPost>
+    <DeletePre>usp</DeletePre>
+    <DeletePost>Delete</DeletePost>
+    <CommentForProcedure>Procedure Name:
+History
+=======================================================================================================================================
+Date				Name					Comment
+=======================================================================================================================================
+03rd Mar 2010		Aniruddha Singh			Created
+=======================================================================================================================================</CommentForProcedure>
+    <SelectStore>DataTable</SelectStore>
+    <DatabaseInsert>ins</DatabaseInsert>
+    <DatabaseUpdate>upd</DatabaseUpdate>
+    <DatabaseDelete>del</DatabaseDelete>
+    <DatabaseSelect>get</DatabaseSelect>
+    <DatabaseChecking>ifExisting</DatabaseChecking>
+    <Normal>IrisPortal.QPM</Normal>
+    <Client>Appraisal.BAL</Client>
+    <Server>Appraisal.DAL</Server>
+    <IsSameServer>False</IsSameServer>
+    <IsSameClient>False</IsSameClient>
+    <ClassPrefix>clsBO</ClassPrefix>
+    <ClassPostfix />
+    <ObjectInitial>o</ObjectInitial>
+    <PropertyClassPrefix>clsBAL</PropertyClassPrefix>
+    <PropertyClassPostfix />
+    <DSN>OleMySql.MySqlSource.1</DSN>
+  </Table1>
+</NewDataSet>
